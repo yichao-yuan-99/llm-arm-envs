@@ -19,3 +19,18 @@ Start Benchmark...
 [RESULT] Kernel time: 419.768 ms, Memory BW: 190.581 GB/s
 Kernel running time: 419768.363 us
 ```
+
+```
+python scripts/benchmark_paged_attention_hbm.py --batch_size=5120
+```
+
+```
+Key cache size: 40.00 GB
+Value cache size: 40.00 GB
+Data accessed by the kernel: 80.00 GB
+Warming up...
+[RESULT] Kernel time: 3.771 ms, Memory BW: 21216.828 GB/s
+Start Benchmark...
+[RESULT] Kernel time: 25.321 ms, Memory BW: 3159.495 GB/s
+Kernel running time: 25320.502 us
+```
